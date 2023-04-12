@@ -90,6 +90,7 @@ export default function CustomizePrompt() {
         You can change these at any time by heading over to the settings tab
         within the app!
       </p>
+      <br />
     </div>
   );
 }

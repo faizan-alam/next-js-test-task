@@ -26,6 +26,7 @@ export default function NewScrape() {
         Lorem ipsum dolor sit amet consectetur. Ut sit vel fames egestas
         integer. Purus ipsum amet scelerisque commodo dui ut.
       </p>
+      <br />
     </div>
   );
 }

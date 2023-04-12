@@ -20,13 +20,21 @@ export default function scrapeData() {
         style={{ display: 'block', marginLeft: '120px' }}
       />
       <div className='flex justify-between'>
-        <h4>Create a new scrape</h4>
+        <h4>Enter scrape data </h4>
         <p className='bg-[#EEF3FF] p-2 text-[#0053E1]'>3/4</p>
       </div>
+      <p>On this modal section, enter the details of your scrape</p>
+      <br />
       <p>
-        Lorem ipsum dolor sit amet consectetur. Ut sit vel fames egestas
-        integer. Purus ipsum amet scelerisque commodo dui ut.
+        Here you can choose where you will like to be notified, the interval of
+        your scrape and the Upwork RSS feed for your jobs
       </p>
+      <br />
+      <p>
+        Don't worry, on the form we'll have a video showing you exactly how to
+        get this information
+      </p>
+      <br />
     </div>
   );
 }

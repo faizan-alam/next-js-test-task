@@ -28,6 +28,7 @@ export default function JobList() {
         Either check the jobs dashboard or just sit back and wait for you to be
         notified in your chosen platforms!
       </p>
+      <br />
     </div>
   );
 }

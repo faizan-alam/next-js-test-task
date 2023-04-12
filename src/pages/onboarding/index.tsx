@@ -4,7 +4,7 @@ import { RiAlarmWarningFill } from 'react-icons/ri';
 import Layout from '@/components/layout/Layout';
 import ArrowLink from '@/components/links/ArrowLink';
 import Seo from '@/components/Seo';
-import Stepper from '@/features/Stepper';
+import Stepper from '@/features/onboarding/Stepper';
 import CustomizePrompt from '@/pages/onboarding/Steps/CustomizePromts';
 import NewScrape from '@/pages/onboarding/Steps/newScrape';
 import ScrapeData from '@/pages/onboarding/Steps/scrapeData';

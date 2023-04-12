@@ -6,6 +6,7 @@ import ArrowLink from '@/components/links/ArrowLink';
 import Seo from '@/components/Seo';
 import { images } from '@/theme';
 import NextImage from '@/components/NextImage';
+import PaginationInfo from '@/components/PaginationInfo/PaginationInfo';
 
 export default function scrapeData() {
   return (
@@ -21,7 +22,7 @@ export default function scrapeData() {
       />
       <div className='flex justify-between'>
         <h4>Enter scrape data </h4>
-        <p className='bg-[#EEF3FF] p-2 text-[#0053E1]'>3/4</p>
+        <PaginationInfo currentPage={3} totalPages={4} />
       </div>
       <p>On this modal section, enter the details of your scrape</p>
       <br />

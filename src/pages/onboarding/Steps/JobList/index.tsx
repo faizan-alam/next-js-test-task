@@ -6,6 +6,7 @@ import ArrowLink from '@/components/links/ArrowLink';
 import Seo from '@/components/Seo';
 import { images } from '@/theme';
 import NextImage from '@/components/NextImage';
+import PaginationInfo from '@/components/PaginationInfo/PaginationInfo';
 
 export default function JobList() {
   return (
@@ -20,7 +21,7 @@ export default function JobList() {
       />
       <div className='flex justify-between'>
         <h4>Get a list of jobs</h4>
-        <p className='bg-[#EEF3FF] p-2 text-[#0053E1]'>4/4</p>
+        <PaginationInfo currentPage={4} totalPages={4} />
       </div>
       <p>With your scrape added, now the fun begins!</p>
       <br />

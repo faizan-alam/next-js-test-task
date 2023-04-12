@@ -6,6 +6,7 @@ import ArrowLink from '@/components/links/ArrowLink';
 import Seo from '@/components/Seo';
 import { images } from '@/theme';
 import NextImage from '@/components/NextImage';
+import PaginationInfo from '@/components/PaginationInfo/PaginationInfo';
 
 export default function NewScrape() {
   return (
@@ -20,7 +21,7 @@ export default function NewScrape() {
       />
       <div className='flex justify-between'>
         <h4>Create a new scrape</h4>
-        <p className='bg-[#EEF3FF] p-2 text-[#0053E1]'>2/4</p>
+        <PaginationInfo currentPage={2} totalPages={4} />
       </div>
       <p>
         Lorem ipsum dolor sit amet consectetur. Ut sit vel fames egestas

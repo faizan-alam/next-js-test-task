@@ -3,6 +3,19 @@ import * as React from 'react';
 import NextImage from '@/components/NextImage';
 import { images } from '@/theme';
 
+type LoginCardType = {
+  handleSubmit: (event: { preventDefault: () => void }) => void;
+  handleEmailChange: (event: {
+    target: { value: React.SetStateAction<string> };
+  }) => void;
+  handlePasswordChange: (event: {
+    target: { value: React.SetStateAction<string> };
+  }) => void;
+  handleGoogleLogin: () => void;
+  email: string;
+  password: string;
+};
+
 export default function LoginCard({
   handleSubmit,
   handleEmailChange,
@@ -10,7 +23,7 @@ export default function LoginCard({
   handleGoogleLogin,
   email,
   password,
-}: any) {
+}: LoginCardType) {
   return (
     <div
       className='rounded rounded-xl bg-white px-8 pb-8 pt-6 shadow-lg'

@@ -1,9 +1,10 @@
 import * as React from 'react';
 
-import Layout from '@/components/layout/Layout';
-import Seo from '@/components/Seo';
+type StepperType = {
+  forms: [];
+};
 
-export default function Stepper({ forms }: any) {
+export default function Stepper({ forms }: StepperType) {
   const [currentStep, setCurrentStep] = React.useState(0);
 
   const handleNext = () => {

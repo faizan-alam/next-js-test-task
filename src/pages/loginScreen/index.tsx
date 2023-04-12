@@ -1,32 +1,34 @@
 import * as React from 'react';
-import { RiAlarmWarningFill } from 'react-icons/ri';
 
 import Layout from '@/components/layout/Layout';
-import ArrowLink from '@/components/links/ArrowLink';
 import Seo from '@/components/Seo';
-import { images } from '@/theme';
-import NextImage from '@/components/NextImage';
 import LoginCard from '@/features/loginScreen/loginCard';
 
 export default function Login() {
   const [email, setEmail] = React.useState('');
   const [password, setPassword] = React.useState('');
 
-  const handleEmailChange = (event: any) => {
+  const handleEmailChange = (event: {
+    target: { value: React.SetStateAction<string> };
+  }) => {
     setEmail(event.target.value);
   };
 
-  const handlePasswordChange = (event: any) => {
+  const handlePasswordChange = (event: {
+    target: { value: React.SetStateAction<string> };
+  }) => {
     setPassword(event.target.value);
   };
 
-  const handleSubmit = (event: any) => {
+  const handleSubmit = (event: { preventDefault: () => void }) => {
     event.preventDefault();
+    // TODO: handle login logic
   };
 
-  const handleGoogleLogin = () => {
-    // TODO: handle Google login logic
-  };
+  function handleGoogleLogin(): void {
+    // throw new Error('Function not implemented.');
+  }
+
   return (
     <Layout>
       <Seo templateTitle='Login' />

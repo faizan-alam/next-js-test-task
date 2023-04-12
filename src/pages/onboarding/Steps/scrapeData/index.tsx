@@ -7,19 +7,12 @@ import Seo from '@/components/Seo';
 import { images } from '@/theme';
 import NextImage from '@/components/NextImage';
 import PaginationInfo from '@/components/PaginationInfo/PaginationInfo';
+import GuidanceImage from '@/components/onboarding-guidanceImage/GuidanceImage';
 
 export default function scrapeData() {
   return (
     <div>
-      <NextImage
-        useSkeleton
-        className='mr-2 justify-center'
-        src={images.scrapeData}
-        width='300'
-        height='300'
-        alt='Icon'
-        style={{ display: 'block', marginLeft: '120px' }}
-      />
+      <GuidanceImage src={images.scrapeData} />
       <div className='flex justify-between'>
         <h4>Enter scrape data </h4>
         <PaginationInfo currentPage={3} totalPages={4} />

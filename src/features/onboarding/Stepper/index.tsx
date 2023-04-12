@@ -44,7 +44,7 @@ export default function Stepper({ forms }: any) {
           </button>
           <div className='p-4' />
           <button
-            className='focus:shadow-outline w-full rounded-lg bg-blue-600 from-blue-600 to-blue-800 py-2 font-bold text-white hover:bg-gradient-to-br focus:outline-none'
+            className='focus:shadow-outline w-full rounded-lg bg-gradient-to-br from-blue-600 to-blue-800 py-2 font-bold text-white focus:outline-none'
             onClick={handleNext}
             disabled={currentStep === forms.length - 1}
           >

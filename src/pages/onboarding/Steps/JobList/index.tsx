@@ -7,18 +7,12 @@ import Seo from '@/components/Seo';
 import { images } from '@/theme';
 import NextImage from '@/components/NextImage';
 import PaginationInfo from '@/components/PaginationInfo/PaginationInfo';
+import GuidanceImage from '@/components/onboarding-guidanceImage/GuidanceImage';
 
 export default function JobList() {
   return (
     <div>
-      <NextImage
-        useSkeleton
-        className='mr-2'
-        src={images.newJob}
-        width='500'
-        height='500'
-        alt='Icon'
-      />
+      <GuidanceImage src={images.newJob} />
       <div className='flex justify-between'>
         <h4>Get a list of jobs</h4>
         <PaginationInfo currentPage={4} totalPages={4} />

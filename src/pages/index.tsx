@@ -15,7 +15,7 @@ import Seo from '@/components/Seo';
  * @see https://stackoverflow.com/questions/68103844/how-to-override-next-js-svg-module-declaration
  */
 import Vercel from '~/svg/Vercel.svg';
-import Navigation from '@/pages/navigation';
+import Navigation from '@/features/navigation';
 
 // !STARTERCONF -> Select !STARTERCONF and CMD + SHIFT + F
 // Before you begin editing, follow all comments with `STARTERCONF`,

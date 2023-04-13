@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 type StepperType = {
-  forms: [];
+  forms: JSX.Element[];
 };
 
 export default function Stepper({ forms }: StepperType) {

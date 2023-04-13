@@ -3,27 +3,35 @@ import * as React from 'react';
 import NextImage from '@/components/NextImage';
 import { images } from '@/theme';
 
-type LoginCardType = {
-  handleSubmit: (event: { preventDefault: () => void }) => void;
-  handleEmailChange: (event: {
-    target: { value: React.SetStateAction<string> };
-  }) => void;
-  handlePasswordChange: (event: {
-    target: { value: React.SetStateAction<string> };
-  }) => void;
-  handleGoogleLogin: () => void;
-  email: string;
-  password: string;
-};
+export default function LoginCard() {
+  const [email, setEmail] = React.useState('');
+  const [password, setPassword] = React.useState('');
 
-export default function LoginCard({
-  handleSubmit,
-  handleEmailChange,
-  handlePasswordChange,
-  handleGoogleLogin,
-  email,
-  password,
-}: LoginCardType) {
+  const handleEmailChange = (event: {
+    target: { value: React.SetStateAction<string> };
+  }) => {
+    setEmail(event.target.value);
+  };
+
+  const handlePasswordChange = (event: {
+    target: { value: React.SetStateAction<string> };
+  }) => {
+    setPassword(event.target.value);
+  };
+
+  const handleSubmit = (event: { preventDefault: () => void }) => {
+    event.preventDefault();
+    // TODO: handle login logic
+  };
+
+  function handleGoogleLogin(): void {
+    // throw new Error('Function not implemented.');
+  }
+
+  function handleLogin(): void {
+    // throw new Error('Function not implemented.');
+  }
+
   return (
     <div
       className='rounded rounded-xl bg-white px-8 pb-8 pt-6 shadow-lg'
@@ -93,6 +101,7 @@ export default function LoginCard({
           </div>
         </div>
         <button
+          onClick={handleLogin}
           className='focus:shadow-outline mb-4 rounded-md bg-gradient-to-br from-blue-600 to-blue-800 px-4 py-2 font-bold text-white focus:outline-none'
           type='submit'
           style={{

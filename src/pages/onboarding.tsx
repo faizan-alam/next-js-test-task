@@ -5,10 +5,10 @@ import Layout from '@/components/layout/Layout';
 import ArrowLink from '@/components/links/ArrowLink';
 import Seo from '@/components/Seo';
 import Stepper from '@/features/onboarding/Stepper';
-import CustomizePrompt from '@/pages/onboarding/Steps/CustomizePromts';
-import NewScrape from '@/pages/onboarding/Steps/newScrape';
-import ScrapeData from '@/pages/onboarding/Steps/scrapeData';
-import JobList from '@/pages/onboarding/Steps/JobList';
+import CustomizePrompt from '@/features/onboarding/Steps/CustomizePromts';
+import NewScrape from '@/features/onboarding/Steps/newScrape';
+import ScrapeData from '@/features/onboarding/Steps/scrapeData';
+import JobList from '@/features/onboarding/Steps/JobList';
 
 const forms = [<CustomizePrompt />, <NewScrape />, <ScrapeData />, <JobList />];
 
